@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+}
+table th {
+  background-color: #999;
+}
+table .even {
+  background-color: #bbb;
+}
+
+table .odd {
+  background-color: #ddd;
+}
