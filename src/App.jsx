@@ -23,7 +23,7 @@ export default _ =>
       <Card title="#07 - Desafio de Repetição" backgroundColor="orange">
         <ProductsTable />
       </Card>
-      <Card title="#06 - Repetição" backgroundColor="	yellowgreen">
+      <Card title="#06 - Repetição" backgroundColor="yellowgreen">
         <ListStudents />
       </Card>
       <Card title="#05 - Componente com Filhos" backgroundColor="purple">
