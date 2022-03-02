@@ -5,10 +5,12 @@ import './Card.css'
 export default (props) => {
 
   const backgroundColor = props.backgroundColor || 'black'
+  const color = props.color || 'white'
 
   const style = {
     'backgroundColor': backgroundColor, 
-    'borderColor': backgroundColor
+    'borderColor': backgroundColor,
+    'color': color
   }
 
   return (

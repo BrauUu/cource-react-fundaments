@@ -10,6 +10,9 @@ import FamilyMember from './components/basics/FamilyMember';
 import ListStudents from './components/repeat/ListStudents';
 import ProductsTable from './components/repeat/ProductsTable';
 import EvenOrOdd from './components/condition/EvenOrOdd';
+import UserInfo from './components/condition/UserInfo';
+import DirectFather from './components/comunication/direct/Father'
+import IndirectFather from './components/comunication/indirect/Father'
 
 import './App.css'
 
@@ -17,8 +20,15 @@ export default _ =>
   <div className="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-      <Card title="#08 - Renderização Condicional" backgroundColor="lightpink">
-        <EvenOrOdd number={4}></EvenOrOdd>
+    <Card title="#10 - Comunicação Indireta" backgroundColor="steelblue">
+        <IndirectFather/>
+      </Card>
+      <Card title="#09 - Comunicação Direta" backgroundColor="brown">
+        <DirectFather/>
+      </Card>
+      <Card title="#08 - Renderização Condicional" backgroundColor="lightpink" color="black">
+        <EvenOrOdd number={4}/>
+        <UserInfo name="Carlinhos"/>
       </Card>
       <Card title="#07 - Desafio de Repetição" backgroundColor="orange">
         <ProductsTable />
