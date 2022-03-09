@@ -13,6 +13,7 @@ import EvenOrOdd from './components/condition/EvenOrOdd';
 import UserInfo from './components/condition/UserInfo';
 import DirectFather from './components/comunication/direct/Father'
 import IndirectFather from './components/comunication/indirect/Father'
+import Input from './components/form/Input'
 
 import './App.css'
 
@@ -20,15 +21,18 @@ export default _ =>
   <div className="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-    <Card title="#10 - Comunicação Indireta" backgroundColor="steelblue">
-        <IndirectFather/>
+      <Card title="#11 - Componente Controlado (Input)" backgroundColor="lightgreen" color="black">
+        <Input />
+      </Card>
+      <Card title="#10 - Comunicação Indireta" backgroundColor="steelblue">
+        <IndirectFather />
       </Card>
       <Card title="#09 - Comunicação Direta" backgroundColor="brown">
-        <DirectFather/>
+        <DirectFather />
       </Card>
       <Card title="#08 - Renderização Condicional" backgroundColor="lightpink" color="black">
-        <EvenOrOdd number={4}/>
-        <UserInfo name="Carlinhos"/>
+        <EvenOrOdd number={4} />
+        <UserInfo name="Carlinhos" />
       </Card>
       <Card title="#07 - Desafio de Repetição" backgroundColor="orange">
         <ProductsTable />

@@ -1,0 +1,7 @@
+.div-input {
+    display: flex;
+    flex-direction: column;
+}
+.div-input input {
+    font-size: 1.2rem;
+}
