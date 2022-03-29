@@ -1,6 +1,11 @@
 import React  from 'react'
 
+import Display from './Display'
+import Buttons from './Buttons'
+import StepForm from './StepForm'
+
 import './Counter.css'
+
 
 export default class Counter extends React.Component {
 
@@ -26,9 +31,9 @@ export default class Counter extends React.Component {
         })
     }
 
-    setStep = (event) => {
+    setStep = (newStep) => {
         this.setState({
-            step: +event.target.value
+            step: newStep
         })
     }
 
@@ -36,17 +41,9 @@ export default class Counter extends React.Component {
          return (
              <div className='counter-div'>
                 <h1>Contador</h1>
-                <div>
-                    <h2>{this.state.number}</h2>
-                    <label>Intervalo de Mudança: </label>
-                    <input 
-                        type="number" 
-                        value={this.state.step}
-                        onChange={this.setStep}
-                    ></input>
-                </div>
-                <button onClick={this.inc}> + </button>
-                <button onClick={this.dec}> - </button>
+                <Display number={this.state.number} />
+                <StepForm setStep={this.setStep} step={this.state.step}/>
+                <Buttons inc={this.inc} dec={this.dec}/>
              </div>
          )
      }
