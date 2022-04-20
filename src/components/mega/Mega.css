@@ -1,0 +1,20 @@
+.mega-result-div {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mega-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+
+    background-color: rgb(184, 184, 184);
+}
